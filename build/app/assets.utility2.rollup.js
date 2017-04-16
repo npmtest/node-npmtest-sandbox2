@@ -202,6 +202,15 @@
             return arg;
         };
 
+        local.onErrorDefault = function (error) {
+        /*
+         * this function will if error exists, then print error.stack to stderr
+         */
+            if (error && !local.global.__coverage__) {
+                console.error(error);
+            }
+        };
+
         local.stringHtmlSafe = function (text) {
         /*
          * this function will make the text html-safe
@@ -305,6 +314,24 @@
                 });
                 return String(value);
             });
+        };
+
+        local.tryCatchOnError = function (fnc, onError) {
+        /*
+         * this function will try to run the fnc in a try-catch block,
+         * else call onError with the errorCaught
+         */
+            // validate onError
+            local.assert(typeof onError === 'function', typeof onError);
+            try {
+                // reset errorCaught
+                local._debugTryCatchErrorCaught = null;
+                return fnc();
+            } catch (errorCaught) {
+                // debug errorCaught
+                local._debugTryCatchErrorCaught = errorCaught;
+                return onError(errorCaught);
+            }
         };
     }());
 
@@ -526,10 +553,9 @@ local.templateApidocMd = '\
                 element.source = 'n/a';
                 // bug-workaround - catch and ignore error
                 // "Function.prototype.toString is not generic"
-                try {
+                local.tryCatchOnError(function () {
                     element.source = trimLeft(module[key].toString());
-                } catch (ignore) {
-                }
+                }, local.onErrorDefault);
                 if (element.source.length > 4096) {
                     element.source = element.source.slice(0, 4096).trimRight() + ' ...';
                 }
@@ -655,15 +681,13 @@ local.templateApidocMd = '\
                 })
                 .slice(0, 128);
             // init moduleMain
-            try {
+            local.tryCatchOnError(function () {
                 console.error('apidocCreate - requiring ' + options.dir + ' ...');
                 moduleMain = {};
                 moduleMain = options.moduleDict[options.env.npm_package_name] ||
                     require(options.dir);
                 console.error('apidocCreate - ... required ' + options.dir);
-            } catch (errorCaught) {
-                console.error(errorCaught);
-            }
+            }, local.onErrorDefault);
             tmp = {};
             // handle case where module is a function
             if (typeof moduleMain === 'function') {
@@ -712,21 +736,21 @@ local.templateApidocMd = '\
             local.apidocModuleDictAdd(options, options.moduleDict);
             // init moduleExtraDict
             local.fs.readdirSync(options.dir).sort().forEach(function (file) {
-                try {
+                local.tryCatchOnError(function () {
                     local.fs.readdirSync(options.dir + '/' + file).sort().forEach(function (
                         file2
                     ) {
                         file2 = file + '/' + file2;
                         options.libFileList.push(file2);
                     });
-                } catch (errorCaught) {
+                }, function () {
                     options.libFileList.push(file);
-                }
+                });
             });
             module = options.moduleExtraDict[options.env.npm_package_name] =
                 options.moduleExtraDict[options.env.npm_package_name] || {};
             options.libFileList.some(function (file) {
-                try {
+                local.tryCatchOnError(function () {
                     tmp = {};
                     tmp.name = local.path.basename(file)
                         .replace('lib.', '')
@@ -764,8 +788,7 @@ local.templateApidocMd = '\
                     module[tmp.name] = tmp.module;
                     // update exampleList
                     options.exampleList.push(readExample(file));
-                } catch (ignore) {
-                }
+                }, local.onErrorDefault);
                 return options.exampleList.length < 256;
             });
             local.apidocModuleDictAdd(options, options.moduleExtraDict);
@@ -783,22 +806,20 @@ local.templateApidocMd = '\
                     module = options.moduleDict[prefix];
                     // handle case where module is a function
                     if (typeof module === 'function') {
-                        try {
+                        local.tryCatchOnError(function () {
                             module[prefix.split('.').slice(-1)[0]] =
                                 module[prefix.split('.').slice(-1)[0]] || module;
-                        } catch (ignore) {
-                        }
+                        }, local.onErrorDefault);
                     }
                     return {
                         elementList: Object.keys(module)
                             .filter(function (key) {
-                                try {
+                                local.tryCatchOnError(function () {
                                     return key &&
                                         (/^\w[\w\-.]*?$/).test(key) &&
                                         key.indexOf('testCase_') !== 0 &&
                                         module[key] !== options.blacklistDict[key];
-                                } catch (ignore) {
-                                }
+                                }, local.onErrorDefault);
                             })
                             .map(function (key) {
                                 return elementCreate(module, prefix, key);
@@ -834,7 +855,7 @@ local.templateApidocMd = '\
                             return;
                         }
                         // bug-workaround - buggy electron accessors
-                        try {
+                        local.tryCatchOnError(function () {
                             tmp = element === 'prototype'
                                 ? {
                                     module: moduleDict[prefix][key].prototype,
@@ -856,10 +877,9 @@ local.templateApidocMd = '\
                                 tmp.module.prototype
                             ].some(function (dict) {
                                 return Object.keys(dict || {}).some(function (key) {
-                                    try {
+                                    local.tryCatchOnError(function () {
                                         return typeof dict[key] === 'function';
-                                    } catch (ignore) {
-                                    }
+                                    }, local.onErrorDefault);
                                 });
                             });
                             if (!isModule) {
@@ -867,8 +887,7 @@ local.templateApidocMd = '\
                             }
                             options.circularList.push(tmp.module);
                             options.moduleDict[tmp.name] = tmp.module;
-                        } catch (ignore) {
-                        }
+                        }, local.onErrorDefault);
                     });
                 });
             });
@@ -10203,6 +10222,9 @@ local.assetsDict['/assets.readmeCustomOrg.npmtest.template.md'] = '\
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-{{env.npm_package_name}}/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-{{env.npm_package_name}}/build/test-report.html)| \
 \n\
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-{{env.npm_package_name}}/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-{{env.npm_package_name}}/tree/gh-pages/build)| \
+\n\
+\n\
+- [https://npmtest.github.io/node-npmtest-{{env.npm_package_name}}/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-{{env.npm_package_name}}/build/coverage.html/index.html) \
 \n\
 \n\
 [![istanbul-coverage](https://npmtest.github.io/node-npmtest-{{env.npm_package_name}}/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-{{env.npm_package_name}}/build/coverage.html/index.html) \
