@@ -51,7 +51,7 @@
                 .requireReadme();
             break;
         }
-        // export local
+        // init exports
         local.global.local = local;
     }());
 
