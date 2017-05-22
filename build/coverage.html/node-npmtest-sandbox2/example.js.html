@@ -192,21 +192,21 @@
 <body>
 <div class="header high">
     <h1 style="font-weight: bold;">
-        <a href="https://github.com/npmtest/node-npmtest-sandbox2">npmtest-sandbox2 (v0.0.1)</a>
+        <a href="https://github.com/npmtest/node-npmtest-sandbox2">npmtest-sandbox2 (v2017.4.26)</a>
     </h1>
     <h1>Code coverage report for <span class="entity">node-npmtest-sandbox2/example.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">100% <small>(83 / 83)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">100% <small>(86 / 86)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(73 / 73)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(76 / 76)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">100% <small>(12 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(13 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">100% <small>(83 / 83)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(86 / 86)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric">26 statements, 1 function, 30 branches</span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
@@ -541,7 +541,13 @@
 325
 326
 327
-328</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+328
+329
+330
+331
+332
+333
+334</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -798,20 +804,25 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6</span>
@@ -825,6 +836,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -871,13 +883,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
 example.js
 &nbsp;
-quickstart example
+this script will create a web demo of npmtest-sandbox2
 &nbsp;
 instruction
     1. save this script as example.js
     2. run the shell command:
         $ npm install npmtest-sandbox2 &amp;&amp; PORT=8081 node example.js
-    3. play with the browser-demo on http://127.0.0.1:8081
+    3. open a browser to http://127.0.0.1:8081 and play with the web demo
 */
 &nbsp;
 &nbsp;
@@ -925,7 +937,7 @@ instruction
         local = local.global.utility2_rollup || (local.modeJs === 'browser'
             ? local.global.utility2_npmtest_sandbox2
             : global.utility2_moduleExports);
-        // export local
+        // init exports
         local.global.local = local;
     }());
     switch (local.modeJs) {
@@ -1024,7 +1036,7 @@ instruction
     // run node js-env code - init-after
     /* istanbul ignore next */
     case 'node':
-        // export local
+        // init exports
         module.exports = local;
         // require modules
         local.fs = require('fs');
@@ -1076,7 +1088,7 @@ textarea[readonly] {\n\
 &lt;/head&gt;\n\
 &lt;body&gt;\n\
 &lt;!-- utility2-comment\n\
-&lt;div id="ajaxProgressDiv1" style="background: #d00; height: 2px; left: 0; margin: 0; padding: 0; position: fixed; top: 0; transition: background 0.5s, width 1.5s; width: 25%;"&gt;&lt;/div&gt;\n\
+&lt;div id="ajaxProgressDiv1" style="background: #d00; height: 2px; left: 0; margin: 0; padding: 0; position: fixed; top: 0; width: 25%;"&gt;&lt;/div&gt;\n\
 utility2-comment --&gt;\n\
 &lt;h1&gt;\n\
 &lt;!-- utility2-comment\n\
@@ -1109,10 +1121,12 @@ utility2-comment --&gt;\n\
 {{#unless isRollup}}\n\
 utility2-comment --&gt;\n\
 &lt;script src="assets.utility2.rollup.js"&gt;&lt;/script&gt;\n\
-&lt;script src="jsonp.utility2._stateInit?callback=window.utility2._stateInit"&gt;&lt;/script&gt;\n\
-&lt;script src="assets.npmtest_sandbox2.rollup.js"&gt;&lt;/script&gt;\n\
+&lt;script&gt;window.utility2.onResetBefore.counter += 1;&lt;/script&gt;\n\
+&lt;script src="jsonp.utility2.stateInit?callback=window.utility2.stateInit"&gt;&lt;/script&gt;\n\
+&lt;script src="assets.npmtest_sandbox2.js"&gt;&lt;/script&gt;\n\
 &lt;script src="assets.example.js"&gt;&lt;/script&gt;\n\
 &lt;script src="assets.test.js"&gt;&lt;/script&gt;\n\
+&lt;script&gt;window.utility2.onResetBefore();&lt;/script&gt;\n\
 &lt;!-- utility2-comment\n\
 {{/if isRollup}}\n\
 utility2-comment --&gt;\n\
@@ -1125,35 +1139,39 @@ utility2-comment --&gt;\n\
 &lt;/html&gt;\n\
 ';
         /* jslint-ignore-end */
-        <span class="skip-if-branch" title="if path not taken" >I</span>if (local.templateRender) {
-<span class="cstat-skip" title="statement not covered" >            local.assetsDict['/'] = local.templateRender(</span>
-                local.assetsDict['/assets.index.template.html'],
-                {
-                    env: local.objectSetDefault(local.env, {
-                        npm_package_description: 'the greatest app in the world!',
-                        npm_package_name: 'my-app',
-                        npm_package_nameAlias: 'my_app',
-                        npm_package_version: '0.0.1'
-                    })
+        [
+            'assets.index.css',
+            'assets.index.template.html',
+            'assets.swgg.swagger.json',
+            'assets.swgg.swagger.server.json'
+        ].forEach(function (file) {
+            local.assetsDict['/' + file] = local.assetsDict['/' + file] || '';
+            <span class="skip-if-branch" title="if path not taken" >I</span>if (local.fs.existsSync(local.__dirname + '/' + file)) {
+<span class="cstat-skip" title="statement not covered" >                local.assetsDict['/' + file] = local.fs.readFileSync(</span>
+                    local.__dirname + '/' + file,
+                    'utf8'
+                );
+            }
+        });
+        local.assetsDict['/'] =
+            local.assetsDict['/assets.example.html'] =
+            local.assetsDict['/assets.index.template.html']
+            .replace((/\{\{env\.(\w+?)\}\}/g), function (match0, match1) {
+                // jslint-hack
+                String(match0);
+                switch (match1) {
+                case 'npm_package_description':
+                    return 'the greatest app in the world!';
+                case 'npm_package_name':
+                    return 'npmtest-sandbox2';
+<span class="branch-2 cbranch-skip" title="branch not covered" >                case 'npm_package_nameAlias':</span>
+<span class="cstat-skip" title="statement not covered" >                    return 'npmtest_sandbox2';</span>
+                case 'npm_package_version':
+                    return '0.0.1';
+                default:
+                    return match0;
                 }
-            );
-        } else {
-            local.assetsDict['/'] = local.assetsDict['/assets.index.template.html']
-                .replace((/\{\{env\.(\w+?)\}\}/g), function (match0, match1) {
-                    // jslint-hack
-                    String(match0);
-                    switch (match1) {
-                    case 'npm_package_description':
-                        return 'the greatest app in the world!';
-                    case 'npm_package_name':
-                        return 'my-app';
-<span class="branch-2 cbranch-skip" title="branch not covered" >                    case 'npm_package_nameAlias':</span>
-<span class="cstat-skip" title="statement not covered" >                        return 'my_app';</span>
-                    case 'npm_package_version':
-                        return '0.0.1';
-                    }
-                });
-        }
+            });
         // run the cli
         <span class="skip-if-branch" title="else path not taken" >E</span>if (local.global.utility2_rollup || module !== require.main) {
             break;
@@ -1163,8 +1181,8 @@ utility2-comment --&gt;\n\
             local.fs.readFileSync(__filename, 'utf8');
         // bug-workaround - long $npm_package_buildCustomOrg
         /* jslint-ignore-begin */
-<span class="cstat-skip" title="statement not covered" >        local.assetsDict['/assets.npmtest_sandbox2.rollup.js'] =</span>
-            local.assetsDict['/assets.npmtest_sandbox2.rollup.js'] ||
+<span class="cstat-skip" title="statement not covered" >        local.assetsDict['/assets.npmtest_sandbox2.js'] =</span>
+            local.assetsDict['/assets.npmtest_sandbox2.js'] ||
             local.fs.readFileSync(
                 local.npmtest_sandbox2.__dirname + '/lib.npmtest_sandbox2.js',
                 'utf8'
@@ -1199,7 +1217,7 @@ utility2-comment --&gt;\n\
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 25 2017 17:47:14 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon May 22 2017 08:17:52 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
