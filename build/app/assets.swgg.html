@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>swgg</title>
+<title>npmtest-sandbox2 (v2017.5.22)</title>
 <style>
 /*csslint
     box-sizing: false,
@@ -20,21 +20,19 @@ body {
 body > * {
     margin-bottom: 1rem;
 }
+body > button {
+    width: 20rem;
+}
+button {
+    cursor: pointer;
+}
+.uiAnimateSlide {
+    overflow-y: hidden;
+    transition: border-bottom 250ms, border-top 250ms, margin-bottom 250ms, margin-top 250ms, max-height 250ms, min-height 250ms, padding-bottom 250ms, padding-top 250ms;
+}
 .utility2FooterDiv {
     margin-top: 20px;
     text-align: center;
-}
-</style>
-<style>
-/*csslint
-    adjoining-classes: false,
-    box-model: false,
-    box-sizing: false,
-    universal-selector: false
-*/
-/* example.js */
-body > button {
-    width: 15rem;
 }
 .zeroPixel {
     border: 0;
@@ -43,9 +41,15 @@ body > button {
     padding: 0;
     width: 0;
 }
-
-
-
+</style>
+<style>
+/*csslint
+    adjoining-classes: false,
+    box-model: false,
+    box-sizing: false,
+    outline-none: false,
+    universal-selector: false
+*/
 /* animate */
 .uiAnimateFade {
     transition: opacity 250ms;
@@ -64,10 +68,6 @@ body > button {
 .uiAnimateShake {
     animation-duration: 500ms;
     animation-name: uiAnimateShake;
-}
-.uiAnimateSlide {
-    overflow-y: hidden;
-    transition: max-height 500ms;
 }
 
 
@@ -276,7 +276,7 @@ body > button {
 border: 0;
     color: #fff;
     padding: 6px 8px;
-    background-color: #580;
+    background: #580;
 }
 .swggUiContainer > .info > * {
     margin-top: 1rem;
@@ -311,6 +311,7 @@ border: 0;
 .swggUiContainer .operation {
     background: #dfd;
     font-size: smaller;
+    outline: none;
 }
 .swggUiContainer .operation > .content {
     padding: 1rem;
@@ -376,6 +377,9 @@ border: 0;
 .swggUiContainer .operation .responseList > .td2 {
     flex: 4;
 }
+.swggUiContainer .resource {
+    outline: none;
+}
 .swggUiContainer .resource > .header > .td1 {
     font-size: large;
 }
@@ -433,8 +437,9 @@ border: 0;
 document.querySelector(".swggUiContainer > .header > .td2").value =
     ((/\bmodeSwaggerJsonUrl=([^&]+)/g).exec(location.search) &&
         (/\bmodeSwaggerJsonUrl=([^&]+)/g).exec(location.search)[1]) ||
-        "assets.swgg.swagger.server.json";
+        "assets.swgg.swagger.json";
 </script>
 <script src="assets.utility2.rollup.js"></script>
+<script>window.swgg.uiEventListenerDict[".onEventUiReload"]();</script>
 </body>
 </html>
