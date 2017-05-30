@@ -10,23 +10,23 @@
 |--:|:--|
 | coverage : | [![coverage](https://npmtest.github.io/node-npmtest-sandbox2/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-sandbox2/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-sandbox2/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-sandbox2/build/test-report.html)|
-| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-sandbox2/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-sandbox2/build/app) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sandbox2/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sandbox2/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-sandbox2/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-sandbox2/build/app) || build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sandbox2/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sandbox2/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-sandbox2/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-sandbox2/build/coverage.html/index.html)
 
-[![coverage](https://npmtest.github.io/node-npmtest-sandbox2/build/screen-capture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-sandbox2/build/coverage.html/index.html)
+[![coverage](https://npmtest.github.io/node-npmtest-sandbox2/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-sandbox2/build/coverage.html/index.html)
 
 - [https://npmtest.github.io/node-npmtest-sandbox2/build/test-report.html](https://npmtest.github.io/node-npmtest-sandbox2/build/test-report.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-sandbox2/build/screen-capture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-sandbox2/build/test-report.html)
+[![test-report](https://npmtest.github.io/node-npmtest-sandbox2/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-sandbox2/build/test-report.html)
 
 - [https://npmdoc.github.io/node-npmdoc-sandbox2/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-sandbox2/build/apidoc.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-sandbox2/build/screen-capture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sandbox2/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-sandbox2/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sandbox2/build/apidoc.html)
 
-![npmPackageListing](https://npmtest.github.io/node-npmtest-sandbox2/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmtest.github.io/node-npmtest-sandbox2/build/screenshot.npmPackageListing.svg)
 
-![npmPackageDependencyTree](https://npmtest.github.io/node-npmtest-sandbox2/build/screen-capture.npmPackageDependencyTree.svg)
+![npmPackageDependencyTree](https://npmtest.github.io/node-npmtest-sandbox2/build/screenshot.npmPackageDependencyTree.svg)
 
 
 
