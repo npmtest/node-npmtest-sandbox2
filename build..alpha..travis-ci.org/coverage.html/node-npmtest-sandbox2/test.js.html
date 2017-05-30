@@ -192,23 +192,23 @@
 <body>
 <div class="header high">
     <h1 style="font-weight: bold;">
-        <a href="https://github.com/npmtest/node-npmtest-sandbox2">npmtest-sandbox2 (v2017.4.26)</a>
+        <a href="https://github.com/npmtest/node-npmtest-sandbox2">npmtest-sandbox2 (v2017.5.22)</a>
     </h1>
     <h1>Code coverage report for <span class="entity">node-npmtest-sandbox2/test.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">100% <small>(54 / 54)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">100% <small>(57 / 57)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(39 / 39)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(45 / 45)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">100% <small>(13 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(14 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">100% <small>(54 / 54)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(57 / 57)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
-        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric">2 statements, 1 function, 4 branches</span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
     <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">node-npmtest-sandbox2/</a> &#187; test.js</div>
 </div>
@@ -410,7 +410,21 @@
 194
 195
 196
-197</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -500,14 +514,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -655,8 +683,8 @@
             break;
         // re-init local from example.js
         case 'node':
-            local = (local.global.utility2_rollup || require('utility2'))
-                .requireReadme();
+            local = (local.global.utility2_rollup ||
+                require('utility2')).requireReadme();
             break;
         }
         // init exports
@@ -695,18 +723,32 @@
 &nbsp;
 &nbsp;
     // run browser js-env code - init-after
+    /* istanbul ignore next */
     case 'browser':
         local.testCase_browser_nullCase = local.testCase_browser_nullCase || function (
             options,
             onError
         ) {
         /*
-         * this function will test browsers's null-case handling-behavior-behavior
+         * this function will test browser's null-case handling-behavior-behavior
          */
             onError(null, options);
         };
 &nbsp;
+        local.utility2.ajaxForwardProxyUrlTest = local.utility2.ajaxForwardProxyUrlTest ||
+<span class="fstat-skip" title="function not covered" >            function (url, location) {</span>
+            /*
+             * this function will test if the url requires forward-proxy
+             */
+                // jslint-hack
+<span class="cstat-skip" title="statement not covered" >                local.nop(url);</span>
+<span class="cstat-skip" title="statement not covered" >                return local.env.npm_package_nameAlias &amp;&amp; (/\bgithub.io$/).test(location.host)</span>
+                    ? 'https://h1-' + local.env.npm_package_nameAlias + '-alpha.herokuapp.com'
+                    : location.protocol + '//' + location.host;
+            };
+&nbsp;
         // run tests
+        // coverage-hack - ignore else-statement
         local.nop(local.modeTest &amp;&amp;
             document.querySelector('#testRunButton1') &amp;&amp;
             document.querySelector('#testRunButton1').click());
@@ -806,7 +848,7 @@
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon May 22 2017 08:17:52 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue May 30 2017 07:44:26 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
