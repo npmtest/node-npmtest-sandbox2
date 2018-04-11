@@ -1,8 +1,8 @@
 # npmtest-sandbox2
 
-#### basic test coverage for  [sandbox2 (v0.0.35)](https://github.com/kaizhu256/node-sandbox2)  [![npm package](https://img.shields.io/npm/v/npmtest-sandbox2.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sandbox2) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sandbox2.svg)](https://travis-ci.org/npmtest/node-npmtest-sandbox2)
+#### basic test coverage for  [sandbox2 (v2018.4.11)](https://github.com/kaizhu256/node-sandbox2)  [![npm package](https://img.shields.io/npm/v/npmtest-sandbox2.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sandbox2) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sandbox2.svg)](https://travis-ci.org/npmtest/node-npmtest-sandbox2)
 
-#### the greatest app in the world!
+#### this is a test app
 
 [![NPM](https://nodei.co/npm/sandbox2.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/sandbox2)
 
@@ -42,15 +42,18 @@
         "url": "https://github.com/kaizhu256/node-sandbox2/issues"
     },
     "dependencies": {},
-    "description": "the greatest app in the world!",
+    "description": "this is a test app",
     "devDependencies": {
         "electron-lite": "github:kaizhu256/node-electron-lite#alpha",
         "utility2": "github:kaizhu256/node-utility2#alpha"
     },
     "directories": {},
     "dist": {
-        "shasum": "ba125c8c5d8bb54b26485f3fe66a3018fb50b550",
-        "tarball": "https://registry.npmjs.org/sandbox2/-/sandbox2-0.0.35.tgz"
+        "integrity": "sha512-ZvqDuh/fkORzeDEacXMOjjaSq8kqFgzHh69JtIjiRJpAMgBruenZgA3qjxb0dWn4Oph14uznQoH/BBHGslj/Pw==",
+        "shasum": "d56b0eb0ce93057d13ff20f78768329e9c36ebae",
+        "tarball": "https://registry.npmjs.org/sandbox2/-/sandbox2-2018.4.11.tgz",
+        "fileCount": 5,
+        "unpackedSize": 36810
     },
     "engines": {
         "node": ">=4.0"
@@ -65,7 +68,8 @@
         }
     ],
     "name": "sandbox2",
-    "nameAlias": "sandbox2",
+    "nameAliasPublish": "",
+    "nameLib": "sandbox2",
     "nameOriginal": "sandbox2",
     "optionalDependencies": {},
     "os": [
@@ -77,14 +81,16 @@
         "url": "git+https://github.com/kaizhu256/node-sandbox2.git"
     },
     "scripts": {
+        "apidocRawCreate": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawCreate",
+        "apidocRawFetch": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawFetch",
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
-        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
-        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
-        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
-        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+        "heroku-postbuild": "npm uninstall utility2 2>/dev/null; npm install kaizhu256/node-utility2#alpha && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptPostinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "0.0.35",
+    "version": "2018.4.11",
     "bin": {}
 }
 ```
