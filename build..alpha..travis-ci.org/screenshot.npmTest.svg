@@ -1,157 +1,363 @@
-<svg height="2462" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2462" fill="#555" width="720"></rect>
+<svg height="3710" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="3710" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
-<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2017-05-30T07:44:12.992Z - npm-testing /home/travis/build/npmtest/node-np\</tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2018-04-11T17:43:44.464Z - npm-testing /home/travis/build/npmtest/node-np\</tspan>
 <tspan x="10" y="58">mtest-sandbox2</tspan>
+
 <tspan x="10" y="74"></tspan>
+
 <tspan x="10" y="90"></tspan>
-<tspan x="10" y="106">covering $ /home/travis/.nvm/versions/node/v6.10.3/bin/node /home/travis/build/npmtest/node-npmt\</tspan>
+
+<tspan x="10" y="106">covering $ /home/travis/.nvm/versions/node/v6.14.1/bin/node /home/travis/build/npmtest/node-npmt\</tspan>
 <tspan x="10" y="122">est-sandbox2/test.js</tspan>
+
 <tspan x="10" y="138"></tspan>
-<tspan x="10" y="154">npmTest - merged test-report from file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/bu\</tspan>
-<tspan x="10" y="170">ild/test-report.json</tspan>
-<tspan x="10" y="186">&gt; server listening on http-port 48399</tspan>
-<tspan x="10" y="202">[node test-case 1 of 7 passed] - testCase_buildApidoc_default</tspan>
+
+<tspan x="10" y="154">npmTest - merged test-report from file /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/buil\</tspan>
+<tspan x="10" y="170">d/test-report.json</tspan>
+
+<tspan x="10" y="186">&gt; server listening on http-port 59761</tspan>
+
+<tspan x="10" y="202">[node test-case 1 of 8 passed] - testCase_buildApidoc_default</tspan>
+
 <tspan x="10" y="218">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="234">2/package.json</tspan>
+
 <tspan x="10" y="250">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="266">2/lib.sandbox2.js</tspan>
+
 <tspan x="10" y="282">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="298">2/LICENSE</tspan>
+
 <tspan x="10" y="314">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="330">2/package.json</tspan>
+
 <tspan x="10" y="346">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="362">2/README.md</tspan>
+
 <tspan x="10" y="378">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="394">2/test.js</tspan>
+
 <tspan x="10" y="410">apidocCreate - requiring /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox2 \</tspan>
 <tspan x="10" y="426">...</tspan>
+
 <tspan x="10" y="442">apidocCreate - ... required /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbo\</tspan>
 <tspan x="10" y="458">x2</tspan>
-<tspan x="10" y="474">created customOrg file:///home/travis/build/npmtest/node-npmtest-sandbox2/README.md</tspan>
+
+<tspan x="10" y="474">created customOrg file /home/travis/build/npmtest/node-npmtest-sandbox2/README.md</tspan>
+
 <tspan x="10" y="490"></tspan>
+
 <tspan x="10" y="506">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="522">2/package.json</tspan>
+
 <tspan x="10" y="538">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="554">2/lib.sandbox2.js</tspan>
+
 <tspan x="10" y="570">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="586">2/LICENSE</tspan>
+
 <tspan x="10" y="602">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="618">2/package.json</tspan>
+
 <tspan x="10" y="634">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="650">2/README.md</tspan>
+
 <tspan x="10" y="666">apidocCreate - readExample /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox\</tspan>
 <tspan x="10" y="682">2/test.js</tspan>
+
 <tspan x="10" y="698">apidocCreate - requiring /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbox2 \</tspan>
 <tspan x="10" y="714">...</tspan>
+
 <tspan x="10" y="730">apidocCreate - ... required /home/travis/build/npmtest/node-npmtest-sandbox2/node_modules/sandbo\</tspan>
 <tspan x="10" y="746">x2</tspan>
-<tspan x="10" y="762">created customOrg file:///home/travis/build/npmtest/node-npmtest-sandbox2/README.md</tspan>
+
+<tspan x="10" y="762">created customOrg file /home/travis/build/npmtest/node-npmtest-sandbox2/README.md</tspan>
+
 <tspan x="10" y="778"></tspan>
-<tspan x="10" y="794">[node test-case 2 of 7 passed] - testCase_buildLib_default</tspan>
-<tspan x="10" y="810">[node test-case 3 of 7 passed] - testCase_buildReadme_default</tspan>
-<tspan x="10" y="826">[node test-case 4 of 7 passed] - testCase_buildTest_default</tspan>
-<tspan x="10" y="842"></tspan>
-<tspan x="10" y="858">browserTest - created electron entry-page /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/e\</tspan>
-<tspan x="10" y="874">lectron.15c584ff3750.7aac53d94985d.html</tspan>
-<tspan x="10" y="890"></tspan>
-<tspan x="10" y="906">[node test-case 5 of 7 passed] - testCase_buildCustomOrg_default</tspan>
-<tspan x="10" y="922">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="938">&gt; server listening on http-port 49052</tspan>
+
+<tspan x="10" y="794">[node test-case 2 of 8 passed] - testCase_buildLib_default</tspan>
+
+<tspan x="10" y="810">[node test-case 3 of 8 passed] - testCase_buildReadme_default</tspan>
+
+<tspan x="10" y="826">[node test-case 4 of 8 passed] - testCase_buildTest_default</tspan>
+
+<tspan x="10" y="842">[node test-case 5 of 8 passed] - testCase_nop_default</tspan>
+
+<tspan x="10" y="858">[node test-case 6 of 8 passed] - testCase_buildCustomOrg_default</tspan>
+
+<tspan x="10" y="874">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="890">&gt; server listening on http-port 44441</tspan>
+
+<tspan x="10" y="906"></tspan>
+
+<tspan x="10" y="922">browserTest - created electron entry-page /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/e\</tspan>
+<tspan x="10" y="938">lectron.162b5ce695b0.f6b304e98be54.html</tspan>
+
 <tspan x="10" y="954"></tspan>
-<tspan x="10" y="970">npmTest - merged test-report from file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/bu\</tspan>
-<tspan x="10" y="986">ild/test-report.json</tspan>
-<tspan x="10" y="1002">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="1018">[6553:0530/074414:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="1034">[6553:0530/074414:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="1050">[6583:0530/074414:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
-<tspan x="10" y="1066">in process gpu-process. </tspan>
-<tspan x="10" y="1082">[6553:0530/074414:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
-<tspan x="10" y="1098"></tspan>
-<tspan x="10" y="1114">browserTest - opened url http://127.0.0.1:48399?modeTest=1</tspan>
-<tspan x="10" y="1130"></tspan>
-<tspan x="10" y="1146">[6553:0530/074415:INFO:CONSOLE(259)] "[browser test-case 1 of 1 passed] - testCase_browser_nullC\</tspan>
-<tspan x="10" y="1162">ase", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.15c584ff3750.\</tspan>
-<tspan x="10" y="1178">7aac53d94985d.html (259)</tspan>
-<tspan x="10" y="1194">[6553:0530/074416:INFO:CONSOLE(259)] "----------|-----------|-----------|-----------|-----------\</tspan>
-<tspan x="10" y="1210">|</tspan>
-<tspan x="10" y="1226">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
-<tspan x="10" y="1242">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1258">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1274">All files |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="1290">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1306">", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.15c584ff3750.7aa\</tspan>
-<tspan x="10" y="1322">c53d94985d.html (259)</tspan>
-<tspan x="10" y="1338">[6553:0530/074416:INFO:CONSOLE(259)] "created coverage file:///tmp/build/coverage.html/index.htm\</tspan>
-<tspan x="10" y="1354">l", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.15c584ff3750.7a\</tspan>
-<tspan x="10" y="1370">ac53d94985d.html (259)</tspan>
-<tspan x="10" y="1386">[node test-case 6 of 7 passed] - testCase_buildApp_default</tspan>
-<tspan x="10" y="1402"></tspan>
-<tspan x="10" y="1418">browserTest - created screenshot file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/bui\</tspan>
-<tspan x="10" y="1434">ld/screenshot.npmTest.browser.%2F.png</tspan>
-<tspan x="10" y="1450"></tspan>
-<tspan x="10" y="1466">browserTest - created screenshot file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/bui\</tspan>
-<tspan x="10" y="1482">ld/screenshot.npmTest.browser.%2F.html</tspan>
-<tspan x="10" y="1498"></tspan>
-<tspan x="10" y="1514">browserTest - exit-code 0 - http://127.0.0.1:48399?modeTest=1</tspan>
-<tspan x="10" y="1530"></tspan>
-<tspan x="10" y="1546"></tspan>
-<tspan x="10" y="1562">browserTest - merged coverage from /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/coverage\</tspan>
-<tspan x="10" y="1578">.npmTest.browser.%2F.json</tspan>
-<tspan x="10" y="1594"></tspan>
-<tspan x="10" y="1610"></tspan>
-<tspan x="10" y="1626">browserTest - merged test-report from file:///home/travis/build/npmtest/node-npmtest-sandbox2/tm\</tspan>
-<tspan x="10" y="1642">p/test-report.npmTest.browser.%2F.json</tspan>
-<tspan x="10" y="1658"></tspan>
-<tspan x="10" y="1674">[node test-case 7 of 7 passed] - testCase_webpage_default</tspan>
-<tspan x="10" y="1690">------------------------------------------------|-----------|-----------|-----------|-----------\</tspan>
-<tspan x="10" y="1706">|</tspan>
-<tspan x="10" y="1722">File                                            |   % Stmts |% Branches |   % Funcs |   % Lines \</tspan>
-<tspan x="10" y="1738">|</tspan>
-<tspan x="10" y="1754">------------------------------------------------|-----------|-----------|-----------|-----------\</tspan>
-<tspan x="10" y="1770">|</tspan>
-<tspan x="10" y="1786">   node-npmtest-sandbox2/                       |       100 |       100 |       100 |       100 \</tspan>
-<tspan x="10" y="1802">|</tspan>
-<tspan x="10" y="1818">      example.js                                |       100 |       100 |       100 |       100 \</tspan>
-<tspan x="10" y="1834">|</tspan>
-<tspan x="10" y="1850">      lib.npmtest_sandbox2.js                   |       100 |       100 |       100 |       100 \</tspan>
-<tspan x="10" y="1866">|</tspan>
-<tspan x="10" y="1882">      test.js                                   |       100 |       100 |       100 |       100 \</tspan>
-<tspan x="10" y="1898">|</tspan>
-<tspan x="10" y="1914">   node-npmtest-sandbox2/node_modules/sandbox2/ |     93.75 |     64.29 |       100 |     93.75 \</tspan>
-<tspan x="10" y="1930">|</tspan>
-<tspan x="10" y="1946">      lib.sandbox2.js                           |     93.75 |     64.29 |       100 |     93.75 \</tspan>
-<tspan x="10" y="1962">|</tspan>
-<tspan x="10" y="1978">------------------------------------------------|-----------|-----------|-----------|-----------\</tspan>
-<tspan x="10" y="1994">|</tspan>
-<tspan x="10" y="2010">All files                                       |     99.43 |     96.64 |       100 |     99.43 \</tspan>
-<tspan x="10" y="2026">|</tspan>
-<tspan x="10" y="2042">------------------------------------------------|-----------|-----------|-----------|-----------\</tspan>
-<tspan x="10" y="2058">|</tspan>
-<tspan x="10" y="2074"></tspan>
-<tspan x="10" y="2090">created coverage file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/build/coverage.html\</tspan>
-<tspan x="10" y="2106">/index.html</tspan>
-<tspan x="10" y="2122"></tspan>
-<tspan x="10" y="2138">npmTest - merged test-report from file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/bu\</tspan>
-<tspan x="10" y="2154">ild/test-report.json</tspan>
-<tspan x="10" y="2170"></tspan>
-<tspan x="10" y="2186">-------------------------------------------------------</tspan>
-<tspan x="10" y="2202">| test-report - buildApp - node - linux v6.10.3 - 2017-05-30T07:44:03.532Z</tspan>
-<tspan x="10" y="2218">|   20092 ms            0 failed        7 passed      |</tspan>
-<tspan x="10" y="2234">-------------------------------------------------------</tspan>
-<tspan x="10" y="2250">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="2266">L, like Gecko) Chrome/53.0.2785.143 Electron/1.4.16 Safari/537.36 - 2017-05-30T07:44:15.251Z</tspan>
-<tspan x="10" y="2282">|      23 ms            0 failed        1 passed      |</tspan>
-<tspan x="10" y="2298">-------------------------------------------------------</tspan>
-<tspan x="10" y="2314"></tspan>
-<tspan x="10" y="2330">created test-report file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/build/test-repor\</tspan>
-<tspan x="10" y="2346">t.html</tspan>
-<tspan x="10" y="2362"></tspan>
-<tspan x="10" y="2378"></tspan>
-<tspan x="10" y="2394">npmTest - 0 failed tests</tspan>
-<tspan x="10" y="2410"></tspan>
-<tspan x="10" y="2426"></tspan>
-<tspan x="10" y="2442">[MODE_BUILD=npmTest] - 2017-05-30T07:44:26.387Z - EXIT_CODE - 0</tspan>
+
+<tspan x="10" y="970">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="986">[5422:0411/174346.419601:WARNING:audio_manager.cc(295)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="1002">ted</tspan>
+
+<tspan x="10" y="1018">[5422:0411/174346.419684:WARNING:audio_manager.cc(254)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="1034">ted</tspan>
+
+<tspan x="10" y="1050">[5458:0411/174346.472883:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="1066">hreads in process gpu-process. </tspan>
+
+<tspan x="10" y="1082">[5422:0411/174346.567968:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1098">l.</tspan>
+
+<tspan x="10" y="1114">[5422:0411/174346.568490:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1130">l.</tspan>
+
+<tspan x="10" y="1146">[5422:0411/174346.570260:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1162">l.</tspan>
+
+<tspan x="10" y="1178">[5422:0411/174346.570446:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1194">l.</tspan>
+
+<tspan x="10" y="1210">[5422:0411/174346.570558:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1226">l.</tspan>
+
+<tspan x="10" y="1242"></tspan>
+
+<tspan x="10" y="1258">browserTest - opened http://127.0.0.1:59761?modeTest=1</tspan>
+
+<tspan x="10" y="1274"></tspan>
+
+<tspan x="10" y="1290">[5422:0411/174347.597805:INFO:CONSOLE(71)] "[browser test-case 1 of 8 passed] - testCase_buildAp\</tspan>
+<tspan x="10" y="1306">idoc_default", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b\</tspan>
+<tspan x="10" y="1322">5ce695b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1338">[5422:0411/174347.608187:INFO:CONSOLE(71)] "[browser test-case 2 of 8 passed] - testCase_buildAp\</tspan>
+<tspan x="10" y="1354">p_default", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce\</tspan>
+<tspan x="10" y="1370">695b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1386">[5422:0411/174347.633602:INFO:CONSOLE(71)] "[browser test-case 3 of 8 passed] - testCase_buildCu\</tspan>
+<tspan x="10" y="1402">stomOrg_default", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.1\</tspan>
+<tspan x="10" y="1418">62b5ce695b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1434">[5422:0411/174347.633657:INFO:CONSOLE(71)] "[browser test-case 4 of 8 passed] - testCase_buildLi\</tspan>
+<tspan x="10" y="1450">b_default", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce\</tspan>
+<tspan x="10" y="1466">695b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1482">[5422:0411/174347.636531:INFO:CONSOLE(71)] "[browser test-case 5 of 8 passed] - testCase_buildRe\</tspan>
+<tspan x="10" y="1498">adme_default", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b\</tspan>
+<tspan x="10" y="1514">5ce695b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1530">[5422:0411/174347.639027:INFO:CONSOLE(71)] "[browser test-case 6 of 8 passed] - testCase_buildTe\</tspan>
+<tspan x="10" y="1546">st_default", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5c\</tspan>
+<tspan x="10" y="1562">e695b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1578">[5422:0411/174347.642648:INFO:CONSOLE(71)] "[browser test-case 7 of 8 passed] - testCase_nop_def\</tspan>
+<tspan x="10" y="1594">ault", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0\</tspan>
+<tspan x="10" y="1610">.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1626">[5422:0411/174347.643893:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 0. 0 .colorError {", \</tspan>
+<tspan x="10" y="1642">source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b304\</tspan>
+<tspan x="10" y="1658">e98be54.html (71)</tspan>
+
+<tspan x="10" y="1674">[5422:0411/174347.644833:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 1. 0 .colorError {", \</tspan>
+<tspan x="10" y="1690">source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b304\</tspan>
+<tspan x="10" y="1706">e98be54.html (71)</tspan>
+
+<tspan x="10" y="1722">[5422:0411/174347.646327:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 2. 0 .testReportDiv .\</tspan>
+<tspan x="10" y="1738">testFailed {", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b\</tspan>
+<tspan x="10" y="1754">5ce695b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1770">[5422:0411/174347.652490:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 3. 0 .testReportDiv i\</tspan>
+<tspan x="10" y="1786">mg {", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0\</tspan>
+<tspan x="10" y="1802">.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1818">[5422:0411/174347.652575:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 4. 1 .testReportDiv .\</tspan>
+<tspan x="10" y="1834">displayNone {", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162\</tspan>
+<tspan x="10" y="1850">b5ce695b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1866">[5422:0411/174347.652721:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 5. 1 .testReportDiv .\</tspan>
+<tspan x="10" y="1882">footer {", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce6\</tspan>
+<tspan x="10" y="1898">95b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1914">[5422:0411/174347.655372:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 6. 1 .testReportDiv .\</tspan>
+<tspan x="10" y="1930">summary {", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce\</tspan>
+<tspan x="10" y="1946">695b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="1962">[5422:0411/174347.656771:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 7. 1 .testReportDiv p\</tspan>
+<tspan x="10" y="1978">re {", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0\</tspan>
+<tspan x="10" y="1994">.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="2010">[5422:0411/174347.656825:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 8. 1 .testReportDiv {\</tspan>
+<tspan x="10" y="2026">", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b\</tspan>
+<tspan x="10" y="2042">304e98be54.html (71)</tspan>
+
+<tspan x="10" y="2058">[5422:0411/174347.657351:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 9. 1 .uiAnimateShake \</tspan>
+<tspan x="10" y="2074">{", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6\</tspan>
+<tspan x="10" y="2090">b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="2106">[5422:0411/174347.657903:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 10. 1 .uiAnimateShake\</tspan>
+<tspan x="10" y="2122"> {", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f\</tspan>
+<tspan x="10" y="2138">6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="2154">[5422:0411/174347.657932:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 11. 1 .zeroPixel {", \</tspan>
+<tspan x="10" y="2170">source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b304\</tspan>
+<tspan x="10" y="2186">e98be54.html (71)</tspan>
+
+<tspan x="10" y="2202">[5422:0411/174347.657963:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 12. 1 .zeroPixel {", \</tspan>
+<tspan x="10" y="2218">source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b304\</tspan>
+<tspan x="10" y="2234">e98be54.html (71)</tspan>
+
+<tspan x="10" y="2250">[5422:0411/174347.661570:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 13. 1 body &gt; pre,", s\</tspan>
+<tspan x="10" y="2266">ource: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b304e\</tspan>
+<tspan x="10" y="2282">98be54.html (71)</tspan>
+
+<tspan x="10" y="2298">[5422:0411/174347.661648:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 14. 1 body &gt; pre,", s\</tspan>
+<tspan x="10" y="2314">ource: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b304e\</tspan>
+<tspan x="10" y="2330">98be54.html (71)</tspan>
+
+<tspan x="10" y="2346">[5422:0411/174347.664269:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 15. 1 code,", source:\</tspan>
+<tspan x="10" y="2362"> file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b304e98be54\</tspan>
+<tspan x="10" y="2378">.html (71)</tspan>
+
+<tspan x="10" y="2394">[5422:0411/174347.664577:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 16. 1 code,", source:\</tspan>
+<tspan x="10" y="2410"> file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b304e98be54\</tspan>
+<tspan x="10" y="2426">.html (71)</tspan>
+
+<tspan x="10" y="2442">[5422:0411/174347.664637:INFO:CONSOLE(71)] "[browser test-case 8 of 8 passed] - testCase_webpage\</tspan>
+<tspan x="10" y="2458">_default", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce6\</tspan>
+<tspan x="10" y="2474">95b0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="2490">[5422:0411/174348.652456:INFO:CONSOLE(71)] "----------|-----------|-----------|-----------|-----\</tspan>
+<tspan x="10" y="2506">------|</tspan>
+
+<tspan x="10" y="2522">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+
+<tspan x="10" y="2538">----------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="2554">----------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="2570">All files |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="2586">----------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="2602">", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b0.f6b\</tspan>
+<tspan x="10" y="2618">304e98be54.html (71)</tspan>
+
+<tspan x="10" y="2634">[5422:0411/174348.662123:INFO:CONSOLE(71)] "created coverage file /tmp/build/coverage.html/index\</tspan>
+<tspan x="10" y="2650">.html", source: file:///home/travis/build/npmtest/node-npmtest-sandbox2/tmp/electron.162b5ce695b\</tspan>
+<tspan x="10" y="2666">0.f6b304e98be54.html (71)</tspan>
+
+<tspan x="10" y="2682">[node test-case 7 of 8 passed] - testCase_buildApp_default</tspan>
+
+<tspan x="10" y="2698"></tspan>
+
+<tspan x="10" y="2714">browserTest - created screenshot file /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/build\</tspan>
+<tspan x="10" y="2730">/screenshot.npmTest.browser.%2F.png</tspan>
+
+<tspan x="10" y="2746"></tspan>
+
+<tspan x="10" y="2762">browserTest - created screenshot file /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/build\</tspan>
+<tspan x="10" y="2778">/screenshot.npmTest.browser.%2F.html</tspan>
+
+<tspan x="10" y="2794"></tspan>
+
+<tspan x="10" y="2810">browserTest - merged coverage from file /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/cov\</tspan>
+<tspan x="10" y="2826">erage.npmTest.browser.%2F.json</tspan>
+
+<tspan x="10" y="2842"></tspan>
+
+<tspan x="10" y="2858"></tspan>
+
+<tspan x="10" y="2874">browserTest - merged test-report from file /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/\</tspan>
+<tspan x="10" y="2890">test-report.npmTest.browser.%2F.json</tspan>
+
+<tspan x="10" y="2906"></tspan>
+
+<tspan x="10" y="2922">[node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
+
+<tspan x="10" y="2938">------------------------------------------------|-----------|-----------|-----------|-----------\</tspan>
+<tspan x="10" y="2954">|</tspan>
+
+<tspan x="10" y="2970">File                                            |   % Stmts |% Branches |   % Funcs |   % Lines \</tspan>
+<tspan x="10" y="2986">|</tspan>
+
+<tspan x="10" y="3002">------------------------------------------------|-----------|-----------|-----------|-----------\</tspan>
+<tspan x="10" y="3018">|</tspan>
+
+<tspan x="10" y="3034">   node-npmtest-sandbox2/                       |       100 |       100 |       100 |       100 \</tspan>
+<tspan x="10" y="3050">|</tspan>
+
+<tspan x="10" y="3066">      example.js                                |       100 |       100 |       100 |       100 \</tspan>
+<tspan x="10" y="3082">|</tspan>
+
+<tspan x="10" y="3098">      lib.npmtest_sandbox2.js                   |       100 |       100 |       100 |       100 \</tspan>
+<tspan x="10" y="3114">|</tspan>
+
+<tspan x="10" y="3130">      test.js                                   |       100 |       100 |       100 |       100 \</tspan>
+<tspan x="10" y="3146">|</tspan>
+
+<tspan x="10" y="3162">   node-npmtest-sandbox2/node_modules/sandbox2/ |        98 |     73.68 |       100 |        98 \</tspan>
+<tspan x="10" y="3178">|</tspan>
+
+<tspan x="10" y="3194">      lib.sandbox2.js                           |        98 |     73.68 |       100 |        98 \</tspan>
+<tspan x="10" y="3210">|</tspan>
+
+<tspan x="10" y="3226">------------------------------------------------|-----------|-----------|-----------|-----------\</tspan>
+<tspan x="10" y="3242">|</tspan>
+
+<tspan x="10" y="3258">All files                                       |     99.57 |     96.09 |       100 |     99.57 \</tspan>
+<tspan x="10" y="3274">|</tspan>
+
+<tspan x="10" y="3290">------------------------------------------------|-----------|-----------|-----------|-----------\</tspan>
+<tspan x="10" y="3306">|</tspan>
+
+<tspan x="10" y="3322"></tspan>
+
+<tspan x="10" y="3338">created coverage file /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/build/coverage.html/i\</tspan>
+<tspan x="10" y="3354">ndex.html</tspan>
+
+<tspan x="10" y="3370"></tspan>
+
+<tspan x="10" y="3386">npmTest - merged test-report from file /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/buil\</tspan>
+<tspan x="10" y="3402">d/test-report.json</tspan>
+
+<tspan x="10" y="3418"></tspan>
+
+<tspan x="10" y="3434">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3450">| test-report - buildApp - node - linux v6.14.1 - 2018-04-11T17:43:35.341Z</tspan>
+
+<tspan x="10" y="3466">|   27013 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="3482">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3498">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="3514">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2018-04-11T17:43:47.528Z</tspan>
+
+<tspan x="10" y="3530">|      57 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="3546">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3562"></tspan>
+
+<tspan x="10" y="3578">created test-report file /home/travis/build/npmtest/node-npmtest-sandbox2/tmp/build/test-report.\</tspan>
+<tspan x="10" y="3594">html</tspan>
+
+<tspan x="10" y="3610"></tspan>
+
+<tspan x="10" y="3626"></tspan>
+
+<tspan x="10" y="3642">npmTest - 0 failed tests</tspan>
+
+<tspan x="10" y="3658"></tspan>
+
+<tspan x="10" y="3674"></tspan>
+
+<tspan x="10" y="3690">[MODE_BUILD=npmTest] - 2018-04-11T17:44:04.199Z - EXIT_CODE - 0</tspan>
+
 </text>
 </svg>
